@@ -1,0 +1,10 @@
+<div id="index_task" class="container">
+  <h1>Tasks</h1>
+  <ul>
+    <% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Add new Task", new_task_path, class: "btn btn-primary btn-sm" %>
+</div>
