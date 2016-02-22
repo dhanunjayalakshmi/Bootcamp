@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render partial: 'common/header' unless controller_name == "home" && action_name == "land"%>
 <%= yield %>
 
 </body>
