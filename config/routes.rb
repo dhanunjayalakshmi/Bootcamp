@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'land' => 'home#land', as: :land
   get 'about' => 'home#about', as: :about
   get 'login' => 'home#login', as: :login
+  get 'signup' => 'home#signup', as: :signup
+  get 'contact' => 'home#contact', as: :contact
   # You can have the root of your site routed with "root"
   root 'home#land'
 
