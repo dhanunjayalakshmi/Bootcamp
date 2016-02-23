@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'land' => 'home#land', as: :land
   get 'about' => 'home#about', as: :about
   get 'login' => 'home#login', as: :login
-  get 'signup' => 'home#signup', as: :signup
+  get 'signup' => 'users#new', as: :signup
   get 'contact' => 'home#contact', as: :contact
   # You can have the root of your site routed with "root"
   root 'home#land'
@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
       resources :tasks
+      resources :users
   # Example resource route with options:
   #   resources :products do
   #     member do
